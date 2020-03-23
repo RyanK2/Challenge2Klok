@@ -1,0 +1,97 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+#background {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.clock {
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+    top: 300px;
+}
+
+#date {
+	margin-top: -30px;
+	font-size: 30px;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+
+
+@media only screen and (min-width: 570px) {
+
+    .clock {
+        font-size: 50px;
+        top: 200px;
+    }
+
+    #background {
+    	background-repeat: repeat-x;
+    	background-size: auto 615px;
+    }
+
+    html {
+    	height: 100%;
+    	max-height: 600px;
+    }
+
+    body {
+    	min-height: 100%;
+    }
+}
+
+@media only screen and (min-width: 870px) {
+
+    .clock {
+        font-size: 60px;
+        top: 360px;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    #date {
+    	margin-top: -50px;
+    }
+
+    main {
+    	justify-content: left;
+    	vertical-align: bottom;
+    }
+
+     #background {
+    	background-repeat: repeat;
+    	background-size: auto 615px;
+    	max-height: 465px;
+    	height: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 1120px) {
+    .clock {
+        font-size: 100px;
+        top: 250px;
+    }
+
+    #date {
+    	font-size: 70px;
+    	margin-top: -100px;
+    }
+
+    #background {
+    	background-repeat: no-repeat;
+    	background-position: right;
+    }
+}
