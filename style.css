@@ -30,18 +30,18 @@ main {
 }
 
 .cloud {
-    width: 200px;
-    height: 100px;
+    width: 170px;
+    height: 70px;
     position:absolute;
     background:transparent url(img/front_cloud.png) 0 0 no-repeat;
     background: #fff;
     border-radius: 100px }
 
 .cloud-top {
-    width: 120px;
-    height: 120px;
-    margin-left: 40px;
-    margin-right: 40px;
+    width: 90px;
+    height: 90px;
+    margin-left: 20px;
+    margin-right: 20px;
     position:absolute;
     background:transparent;
     background: #fff;
@@ -54,8 +54,50 @@ main {
         -webkit-animation: drift 25s linear infinite;
     animation: drift 25s linear infinite;
 }
-    
 
+.top02 {
+    top: 110px;
+    -webkit-animation: drift 35s linear 5s infinite backwards;
+}
+
+.fcloud01 {
+    top:50px;
+    z-index:100;
+    /* animation syntax shorthand order: name duration timing-function delay iteration-count direction fill-mode */
+        -webkit-animation: drift 25s linear infinite;
+        -moz-animation: drift 25s linear infinite;
+        -o-animation: drift 25s linear infinite;
+    animation: drift 25s linear infinite;
+}
+
+.fcloud02 {
+    top:150px;
+    z-index: 200;
+        -webkit-animation: drift 35s linear 5s infinite backwards;
+        -moz-animation: drift 35s linear 5s infinite backwards;
+        -o-animation: drift 35s linear 5s infinite backwards;
+    animation: drift 35s linear 5s infinite backwards;
+}
+
+@-webkit-keyframes drift {
+    from {-webkit-transform:translateX(-255px);}
+    to {-webkit-transform:translateX(1350px);}
+}
+
+@-moz-keyframes drift {
+    from {-moz-transform:translateX(-255px);}
+    to {-moz-transform:translateX(1350px);}
+}
+
+@-o-keyframes drift {
+    from {-o-transform:translateX(-255px);}
+    to {-o-transform:translateX(1350px);}
+}
+
+@-keyframes drift {
+    from {transform:translateX(-255px);}
+    to {transform:translateX(1350px);}
+}
 
 @media only screen and (min-width: 570px) {
 
