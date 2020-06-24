@@ -29,6 +29,33 @@ main {
 	justify-content: center;
 }
 
+.cloud {
+    width: 200px;
+    height: 100px;
+    position:absolute;
+    background:transparent url(img/front_cloud.png) 0 0 no-repeat;
+    background: #fff;
+    border-radius: 100px }
+
+.cloud-top {
+    width: 120px;
+    height: 120px;
+    margin-left: 40px;
+    margin-right: 40px;
+    position:absolute;
+    background:transparent;
+    background: #fff;
+        -webkit-border-radius: 60px;
+    border-radius: 60px;
+}
+    
+.top01 {
+    top: 15px;
+        -webkit-animation: drift 25s linear infinite;
+    animation: drift 25s linear infinite;
+}
+    
+
 
 @media only screen and (min-width: 570px) {
 
