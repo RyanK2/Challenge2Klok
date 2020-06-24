@@ -3,8 +3,8 @@ var today = new Date();
 var hour = today.getHours();
 var min = today.getMinutes();
 var sec = today.getSeconds();
-var day = today.getDay();
-var month = today.getMonth();
+var day = String(today.getDate()).padStart(2, '0');
+var month = String(today.getMonth() + 1).padStart(2, '0');
 var year = today.getFullYear();
 
 if (sec.toString().length == 1) {
