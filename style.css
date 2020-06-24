@@ -63,7 +63,6 @@ main {
 .fcloud01 {
     top:50px;
     z-index:100;
-    /* animation syntax shorthand order: name duration timing-function delay iteration-count direction fill-mode */
         -webkit-animation: drift 25s linear infinite;
         -moz-animation: drift 25s linear infinite;
         -o-animation: drift 25s linear infinite;
